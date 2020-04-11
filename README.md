@@ -24,8 +24,8 @@ python main.py 9
 - 画像データのExif削除
 
     ```bash
-    mogrify -auto-orient data/img.orig/*
-    exiftool -all= data/img.orig/*
+    mogrify -auto-orient data/img.orig/IMG_*.JPG
+    exiftool -all= data/img.orig/IMG_*.JPG
     ```
 
 - モデルの作成

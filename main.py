@@ -20,6 +20,7 @@ def show(img, title="", destroy=True):
 
 
 imgs = list(glob.glob('data/img/*.JPG'))
+imgs.sort()
 img_index = 0 if len(sys.argv) < 2 else int(sys.argv[1])
 file_path = imgs[img_index]
 
